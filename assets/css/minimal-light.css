@@ -1,0 +1,58 @@
+
+/* Minimal Light — editorial magazine homepage, article-style player. */
+body.minimal-home,body.minimal-watch{--bg:#f8f7f4;--header:#fff;--card:#fff;--text:#1e2429;--text2:#67717b;--line:#e1e2e0;--search:#f1f1ef;--yellow:#e34845;background:#f8f7f4;color:#202428;font-family:Georgia,"Times New Roman",serif}
+.minimal-home .topbar,.minimal-watch .topbar{background:#fff;border-bottom:1px solid #dcdedc;box-shadow:none;height:auto;min-height:82px;padding:14px clamp(18px,5vw,80px)}
+.minimal-home .search-box input,.minimal-watch .search-box input{background:#f4f3f1;color:#1b2229;border:1px solid #d8dbdc;border-radius:4px;font-family:Arial,sans-serif}
+.minimal-home .category-filters button,.minimal-home .category-dropdown{background:#fff!important;border:1px solid #d7d7d4!important;border-radius:3px!important;color:#27313b!important;font-family:Arial,sans-serif}
+.minimal-home .category-filters button.active{background:#e34845!important;border-color:#e34845!important;color:#fff!important}
+.minimal-masthead{max-width:1500px;margin:0 auto;padding:36px clamp(18px,5vw,80px) 15px}
+.minimal-edition{display:flex;justify-content:space-between;border-bottom:2px solid #252c32;padding-bottom:14px;font:700 11px Arial,sans-serif;letter-spacing:.16em;color:#e34845;gap:15px}
+.minimal-edition span+span{color:#70757a}
+.minimal-masthead-row{display:grid;grid-template-columns:1.4fr 1fr;align-items:end;gap:30px;padding:28px 0 32px}
+.minimal-masthead h1{font-size:clamp(48px,8vw,110px);letter-spacing:-.08em;line-height:.91;font-weight:500}
+.minimal-masthead h1 i{font-weight:400;color:#e34845}
+.minimal-masthead-row p{max-width:350px;justify-self:end;color:#5b6269;line-height:1.7;font-size:17px}
+.minimal-rule{display:flex;justify-content:space-between;border-top:1px solid #cbd0d0;border-bottom:1px solid #cbd0d0;padding:14px 0;font:700 11px Arial,sans-serif;letter-spacing:.14em;color:#555d65}
+.minimal-home .container{max-width:1500px;padding:22px clamp(18px,5vw,80px) 75px}
+.minimal-home .video-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px 20px}
+.minimal-home .video-card{border-top:1px solid #d6d8d7;padding-top:12px;min-width:0}
+.minimal-home .video-card:nth-child(1){grid-column:span 2;grid-row:span 2;border-top:3px solid #e34845}
+.minimal-home .video-card:nth-child(6n+4){grid-column:span 2}
+.minimal-home .video-card:nth-child(6n+4) .thumb-box{aspect-ratio:16/8.5}
+.minimal-home .video-card:nth-child(1) .thumb-box{aspect-ratio:4/3}
+.minimal-home .thumb-box{border-radius:3px;background:#e4e4e2}
+.minimal-home .meta{margin-top:13px}
+.minimal-home .title{font-family:Georgia,"Times New Roman",serif;color:#24282b;font-size:17px;font-weight:600;min-height:0}
+.minimal-home .video-card:nth-child(1) .title{font-size:clamp(24px,3vw,37px);line-height:1.12}
+.minimal-home .views{color:#737b7d;font:12px Arial,sans-serif}
+.minimal-home .video-link{color:#202428}
+.minimal-home .video-pagination button{background:#fff!important;color:#2a3035!important;border:1px solid #c8cbcb!important;border-radius:2px!important}
+.minimal-home .video-pagination #pageInfo{font-family:Arial,sans-serif}
+.minimal-watch-breadcrumb{max-width:1500px;margin:25px auto 0;padding:0 clamp(18px,5vw,80px);display:flex;justify-content:space-between;gap:15px;font:700 11px Arial,sans-serif;letter-spacing:.1em;color:#8c9296}
+.minimal-watch-breadcrumb a{color:#d63e3b;text-decoration:none}
+.minimal-watch .watch-page{display:flex;flex-direction:column;max-width:1500px;padding:20px clamp(18px,5vw,80px) 80px;gap:30px}
+.minimal-watch .player-section{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(280px,.85fr);column-gap:30px;align-items:start}
+.minimal-watch .player-box{grid-column:1;grid-row:1/3;border-radius:4px;border:1px solid #d7d7d4;box-shadow:0 16px 30px #17171715}
+.minimal-watch .video-info{grid-column:2;grid-row:1;background:#fff;border-top:4px solid #e34845;padding:24px 22px;margin-top:0;min-height:170px}
+.minimal-watch #videoTitle{font-size:clamp(23px,2.5vw,34px);font-weight:500;line-height:1.15;letter-spacing:-.035em;color:#202428}
+.minimal-watch #videoViews{font:13px Arial,sans-serif;color:#747c80}
+.minimal-watch .video-toolbar{grid-column:2;grid-row:2;margin-top:12px;display:flex;gap:8px}
+.minimal-watch .tool-btn{background:#fff;border:1px solid #dadcda;color:#31383e;border-radius:3px;padding:0 13px;font:13px Arial,sans-serif}
+.minimal-watch .tool-btn.active{background:#e34845;color:white}
+.minimal-watch .related-section{grid-column:1/-1;margin-top:50px;border-top:2px solid #2b3136;padding-top:20px}
+.minimal-watch .related-heading,.minimal-watch .sidebar-heading{font-size:29px;font-weight:500;color:#262b2e;margin-bottom:20px}
+.minimal-watch .related-card{background:#fff;border:1px solid #e0e2e0;border-radius:3px;overflow:hidden;color:#202428}
+.minimal-watch .related-title{color:#202428}
+.minimal-watch .sidebar-section{border-top:2px solid #2b3136;padding-top:22px}
+.minimal-watch .sidebar-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 30px}
+.minimal-watch .side-card{border-radius:0;border-bottom:1px solid #d8dada;padding:12px 0;color:#202428}
+.minimal-watch .side-card:hover{background:#f0efec}
+.minimal-watch .side-thumb-box{width:140px;border-radius:2px;background:#e5e5e3}
+.minimal-watch .side-title{font-size:15px;font-family:Georgia,serif;color:#252a2e}
+.minimal-watch .side-views{color:#747c80}
+.minimal-watch .spinner{border-top-color:#e34845}
+@media(max-width:1050px){.minimal-home .video-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.minimal-watch .player-section{grid-template-columns:minmax(0,1fr) 260px;gap:15px}.minimal-watch .sidebar-list{grid-template-columns:1fr}}
+@media(max-width:750px){.minimal-home .topbar,.minimal-watch .topbar{padding:12px 14px}.minimal-masthead{padding:25px 18px 10px}.minimal-edition span+span{display:none}.minimal-masthead-row{grid-template-columns:1fr;gap:20px}.minimal-masthead-row p{justify-self:start}.minimal-home .container{padding:18px 12px 60px}.minimal-home .video-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 12px}.minimal-home .video-card:nth-child(1){grid-column:1/-1;grid-row:auto}.minimal-home .video-card:nth-child(6n+4){grid-column:auto}.minimal-home .video-card:nth-child(6n+4) .thumb-box{aspect-ratio:16/9}.minimal-home .video-card:nth-child(1) .thumb-box{aspect-ratio:16/9}.minimal-home .video-card:nth-child(1) .title{font-size:24px}.minimal-home .title{font-size:14px}.minimal-watch-breadcrumb{padding:0 14px}.minimal-watch .watch-page{padding:16px 12px 50px}.minimal-watch .player-section{grid-template-columns:1fr}.minimal-watch .player-box{grid-column:1;grid-row:1}.minimal-watch .video-info{grid-column:1;grid-row:2;margin-top:16px}.minimal-watch .video-toolbar{grid-column:1;grid-row:3}.minimal-watch .related-section{grid-column:1;grid-row:4;margin-top:28px}.minimal-watch .sidebar-list{grid-template-columns:1fr}}
+
+/* Video-first editorial layout without decorative headings. */
+.minimal-home .container.minimal-catalog{padding-top:30px}
